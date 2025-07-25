@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Modern website for Kosova Makers League, aligned with their brand identity and refreshed with a new, vibrant look.",
       image:
-        "https://raw.githubusercontent.com/kosovamakersleague/kml-website/refs/heads/main/kml-website/public/1.%20BALLINA.png?token=GHSAT0AAAAAADH2ADNN3E3222WJE64F5IV62EDVNCA",
+        "https://github.com/kosovamakersleague/kml-website/blob/main/kml-website/public/1.%20BALLINA.png?raw=true",
       technologies: ["Next.js", "React", "WordPress", "PHP"],
       githubUrl: "https://github.com/kosovamakersleague/kml-website",
       liveUrl: "https://kosovamakers.vercel.app/",
