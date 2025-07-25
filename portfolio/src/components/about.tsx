@@ -58,9 +58,9 @@ const About = () => {
             </h2>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I&apos;m a Fullstack Developer from Prishtina Kosovo, currently
+              I&apos;m a Fullstack Developer from Prishtina, Kosovo, currently
               working at{" "}
-              <span className="text-valorant-red">
+              <span className="text-primary">
                 <a href="https://ve2max.com" target="_blank">
                   ve2max{" "}
                 </a>
