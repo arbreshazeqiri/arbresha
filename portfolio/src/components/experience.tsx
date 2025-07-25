@@ -81,7 +81,7 @@ const Experience = () => {
             Experience & Education
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and educational background that shaped my skills and expertise.
+            My professional journey and educational background that shaped my skills.
           </p>
         </div>
         

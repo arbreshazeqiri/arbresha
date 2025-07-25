@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Modern website for Kosova Makers League, aligned with their brand identity and refreshed with a new, vibrant look.",
       image:
-        "https://github.com/kosovamakersleague/kml-website/blob/main/kml-website/public/1.%20BALLINA.png?raw=true",
+        "/projects/kml.png",
       technologies: ["Next.js", "React", "WordPress", "PHP"],
       githubUrl: "https://github.com/kosovamakersleague/kml-website",
       liveUrl: "https://kosovamakers.vercel.app/",
@@ -21,7 +21,7 @@ const Projects = () => {
       description:
         "Website showcasing the services of a local healthcare clinic, focusing on accessibility and clear user navigation.",
       image:
-        "https://raw.githubusercontent.com/arbreshazeqiri/Healthcare-ANALIZA/refs/heads/main/healthcare-analiza/public/Group%201321317799.png",
+        "/projects/healthcare-analiza.png",
       technologies: ["Next.js", "React", "Tailwind CSS"],
       githubUrl: "https://github.com/arbreshazeqiri/Healthcare-ANALIZA",
       liveUrl: "https://healthcareanaliza.com",
@@ -31,7 +31,7 @@ const Projects = () => {
       description:
         "A desktop app built for playing the Pig Dice Game against other players or against the computer.",
       image:
-        "https://user-images.githubusercontent.com/61945677/126212213-ea6bb1b0-8e84-4c1f-9cc1-d5b7887915a6.png",
+        "/projects/pdg.png",
       technologies: ["Java", "JavaFX", "MYSQL"],
       githubUrl: "https://github.com/arbreshazeqiri/DiceRollSimulator",
     },
@@ -40,7 +40,7 @@ const Projects = () => {
       description:
         "Minesweeper game in three difficulty levels. Solves the board using either Breadth-First Search or Depth-First Search algorithms.",
       image:
-        "https://raw.githubusercontent.com/arbreshazeqiri/Minesweeper/refs/heads/main/minesweeper/public/Minesweeper%20Solver.png",
+        "/projects/minesweeper-solver.png",
       technologies: ["React", "JavaScript", "BFS", "DFS"],
       githubUrl: "https://github.com/arbreshazeqiri/Minesweeper",
     },
@@ -65,7 +65,7 @@ const Projects = () => {
               className="p-0 overflow-hidden hover:shadow-xl transition-all duration-300 group border-border bg-card hover:bg-secondary/20 hover:border-primary/30"
             >
               <div
-                className="aspect-video bg-muted bg-cover bg-center"
+                className="aspect-video bg-muted bg-cover bg-start"
                 style={{ backgroundImage: `url(${project.image})` }}
               ></div>
 
