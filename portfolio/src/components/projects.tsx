@@ -38,7 +38,7 @@ const Projects = () => {
     {
       title: "Minesweeper Solver",
       description:
-        "Minesweeper game in three difficulty levels. Solves the board using either the Breadth-First Search or the Depth-First Search algorithm.",
+        "Minesweeper game in three difficulty levels. Solves the board using either the BFS or the DFS algorithm.",
       image:
         "/projects/minesweeper-solver.png",
       technologies: ["React", "JavaScript", "BFS", "DFS"],
