@@ -1,7 +1,18 @@
+"use client"
+import Intro from "@/components/intro";
+import About from "@/components/about";
+import Experience from "@/components/experience";
+import Projects from "@/components/projects";
+import Footer from "@/components/footer";
+
 export default function Home() {
   return (
-    <div className="h-100hw font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      Coming soon...
+    <div className="min-h-screen">
+      <Intro />
+      <About />
+      <Experience />
+      <Projects />
+      <Footer />
     </div>
   );
 }
