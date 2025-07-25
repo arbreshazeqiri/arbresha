@@ -8,9 +8,9 @@ const Projects = () => {
     {
       title: "Kosova Makers League Website",
       description:
-        "A full-stack e-commerce solution with modern payment integration, inventory management, and responsive design.",
+        "Modern website for Kosova Makers League, aligned with their brand identity and refreshed with a new, vibrant look.",
       image:
-        "https://private-user-images.githubusercontent.com/61945677/470822847-cef3fe4a-f1bd-4e6a-a455-357b66e0c36a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM0NTI0MzAsIm5iZiI6MTc1MzQ1MjEzMCwicGF0aCI6Ii82MTk0NTY3Ny80NzA4MjI4NDctY2VmM2ZlNGEtZjFiZC00ZTZhLWE0NTUtMzU3YjY2ZTBjMzZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzI1VDE0MDIxMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVjMzc2YTAzMWQ1ZTg1NTYyMzY4ZTJiYTA2MzBiNGIyZTI1YWM2Yzc4MTczMGExMTYwZTIxNTk5OTdjMDZiNTAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.CHj5Ej_QqQG5_G1634SPsF5clpeVhEL37Qjn0Ftfwrg",
+        "https://raw.githubusercontent.com/kosovamakersleague/kml-website/refs/heads/main/kml-website/public/1.%20BALLINA.png?token=GHSAT0AAAAAADH2ADNN3E3222WJE64F5IV62EDVNCA",
       technologies: ["Next.js", "React", "WordPress", "PHP"],
       githubUrl: "https://github.com/kosovamakersleague/kml-website",
       liveUrl: "https://kosovamakers.vercel.app/",
@@ -19,9 +19,9 @@ const Projects = () => {
     {
       title: "Healthcare Analiza Website",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+        "Website showcasing the services of a local healthcare clinic, focusing on accessibility and clear user navigation.",
       image:
-        "https://private-user-images.githubusercontent.com/61945677/470820678-9ec7e80a-29e7-446f-9ce2-a8381366ee36.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM0NTIxODIsIm5iZiI6MTc1MzQ1MTg4MiwicGF0aCI6Ii82MTk0NTY3Ny80NzA4MjA2NzgtOWVjN2U4MGEtMjllNy00NDZmLTljZTItYTgzODEzNjZlZTM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzI1VDEzNTgwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFmNmQ5YzJlZGNlOGMwNDU5OWUzMTE2MjIxZWU2YzhkMWIzNzVlMjNkNTc3YmY1Y2E1OWNkOGNkOWEwODQ0ZDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.MgNzzzz8vWIGaHB3DuF1zQzAAkz33qfSC_7XrJHRqVo",
+        "https://raw.githubusercontent.com/arbreshazeqiri/Healthcare-ANALIZA/refs/heads/main/healthcare-analiza/public/Group%201321317799.png",
       technologies: ["Next.js", "React", "Tailwind CSS"],
       githubUrl: "https://github.com/arbreshazeqiri/Healthcare-ANALIZA",
       liveUrl: "https://healthcareanaliza.com",
@@ -29,7 +29,7 @@ const Projects = () => {
     {
       title: "Pig Dice Game",
       description:
-        "An intuitive weather dashboard with location-based forecasts, interactive maps, and historical weather data visualization.",
+        "A desktop app built for playing the Pig Dice Game against other players or against the computer.",
       image:
         "https://user-images.githubusercontent.com/61945677/126212213-ea6bb1b0-8e84-4c1f-9cc1-d5b7887915a6.png",
       technologies: ["Java", "JavaFX", "MYSQL"],
@@ -38,9 +38,9 @@ const Projects = () => {
     {
       title: "Minesweeper Solver",
       description:
-        "A custom content management system for bloggers with markdown support, SEO optimization, and social media integration.",
+        "Minesweeper game in three difficulty levels. Solves the board using either Breadth-First Search or Depth-First Search algorithms.",
       image:
-        "https://private-user-images.githubusercontent.com/61945677/239621271-6c6dba47-415f-43da-9286-0868b0c1c091.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTM0NTI2MTIsIm5iZiI6MTc1MzQ1MjMxMiwicGF0aCI6Ii82MTk0NTY3Ny8yMzk2MjEyNzEtNmM2ZGJhNDctNDE1Zi00M2RhLTkyODYtMDg2OGIwYzFjMDkxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzI1VDE0MDUxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThlMTY0YmI4YjE3ODE1NjllYWQ0NDMwYTFlZmQ5MWM2MjljZjJkZjY4OTRkNWZhZDAxNWYxZjJjOWI5OGIwMWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.E4gqj93vfKWurnty8m1vUnqs5g3O5nlYJ8P3wk4pwgI",
+        "https://raw.githubusercontent.com/arbreshazeqiri/Minesweeper/refs/heads/main/minesweeper/public/Minesweeper%20Solver.png",
       technologies: ["React", "JavaScript", "BFS", "DFS"],
       githubUrl: "https://github.com/arbreshazeqiri/Minesweeper",
     },
@@ -74,7 +74,7 @@ const Projects = () => {
                   <CardTitle className="text-lg mb-2 group-hover:text-primary transition-colors">
                     {project.title}
                   </CardTitle>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
+                  <p className="text-muted-foreground text-sm line-clamp-3">
                     {project.description}
                   </p>
                 </CardHeader>

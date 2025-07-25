@@ -29,7 +29,7 @@ const About = () => {
       title: "Mobile",
       description:
         "Cross-platform mobile app development with native performance",
-      techs: ["React Native"],
+      techs: ["React Native", "Expo"],
       color: "text-valorant-red",
     },
     {
@@ -58,23 +58,45 @@ const About = () => {
             </h2>
 
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I&apos;m a Fullstack Developer from Prishtina Kosovo, currently working at{" "}
-              <span className="text-valorant-red"><a href="https://ve2max.com" target="_blank">ve2max </a></span>as a
-              Lead Developer on{" "}
-              <span className="text-art-purple"><a href="https://mediamorph.ai" target="_blank">MediaMorph</a></span>, an AI-powered
-              social media tool. As a Computer Engineering graduate turned Software Developer, I believe the best code combines technical
-              excellence with creative vision.
+              I&apos;m a Fullstack Developer from Prishtina Kosovo, currently
+              working at{" "}
+              <span className="text-valorant-red">
+                <a href="https://ve2max.com" target="_blank">
+                  ve2max{" "}
+                </a>
+              </span>
+              as a Lead Developer on{" "}
+              <span className="text-art-purple">
+                <a href="https://mediamorph.ai" target="_blank">
+                  MediaMorph
+                </a>
+              </span>
+              , an AI-powered social media tool. As a Computer Engineering
+              graduate turned Software Developer, I believe the best code
+              combines technical excellence with creative vision.
             </p>
 
             <div className="my-5 flex flex-col gap-4">
               <p className="text-xl text-muted-foreground leading-relaxed">
-                When I’m not working, you’ll probably find me reading… or playing Valorant (more than I’d like to admit).
+                When I’m not working, you’ll probably find me reading… or
+                playing Valorant (more than I’d like to admit).
               </p>
-              <div className="flex items-center gap-6">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Gamepad2 className="w-6 h-6 text-valorant-red" />
-                  <Library className="w-6 h-6 text-art-purple" />
-                </div>
+
+              <div className="flex items-center gap-6 pt-2">
+                <a
+                  href="https://tracker.gg/valorant/profile/riot/vajzallave%231472"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary/50 rounded-lg"
+                >
+                  <Gamepad2 size={24} />
+                </a>
+                <a
+                  href="https://www.goodreads.com/vajzallave"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-primary transition-colors p-2 hover:bg-secondary/50 rounded-lg"
+                >
+                  <Library size={24} />
+                </a>
               </div>
             </div>
           </div>
