@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Briefcase, GraduationCap, MapPin, Calendar } from "lucide-react";
 
 const Experience = () => {
@@ -7,6 +8,7 @@ const Experience = () => {
     {
       title: "Fullstack Developer",
       company: "ve2max",
+      link: "https://ve2max.com",
       location: "Amsterdam, Netherlands",
       period: "Jan 2025 - Present",
       description: "Implementing software ideas from scratch.",
@@ -19,10 +21,11 @@ const Experience = () => {
     {
       title: "Fullstack Developer (Volunteer)",
       company: "Kosova Makers League",
+      link: "https://kosovamakers.net",
       location: "Prishtina, Kosovo",
       period: "April 2024 - Present",
       description:
-        "Redesigned the organization's website from the ground up based on their visual identity and user needs.",
+        "Redesigned the website from the ground up based on their visual identity and user needs.",
       achievements: [
         "Did in-depth research and redesigned the website in Figma to match their branding.",
         "Implemented the design using PHP and WordPress for accessibility and ease of use.",
@@ -34,10 +37,11 @@ const Experience = () => {
     {
       title: "Web Development Instructor",
       company: "BONEVET",
+      link: "https://bonevet.org",
       location: "Prishtina, Kosovo",
       period: "March 2025 - April 2025",
       description:
-        "Designed and delivered a Web Development program for children, introducing core programming principles.",
+        "Designed and delivered a Web Development program for children aged 12-14.",
       achievements: [
         "Taught programming fundamentals in an engaging, age-appropriate format.",
         "Introduced students to HTML, CSS, and JavaScript through hands-on examples.",
@@ -48,7 +52,8 @@ const Experience = () => {
     },
     {
       title: "Software Development Engineer (Internship)",
-      company: "Everest Systems, GmbH.",
+      company: "Everest Systems",
+      link: "https://everest-systems.com",
       location: "Heidelberg, Germany",
       period: "June 2024 - Dec 2024",
       description:
@@ -63,7 +68,8 @@ const Experience = () => {
     },
     {
       title: "Fullstack Developer",
-      company: "Attributy Inc.",
+      company: "Attributy.",
+      link: "https://attributy.com",
       location: "Prishtina, Kosovo",
       period: "Sep 2022 - June 2024",
       description:
@@ -135,50 +141,83 @@ const Experience = () => {
               <h3 className="text-2xl font-semibold">Work Experience</h3>
             </div>
 
-            <div className="space-y-6">
-              {workExperience.map((job, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-lg">{job.title}</CardTitle>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
-                      <span className="font-medium text-primary">
+            <Tabs
+              defaultValue={workExperience[0].company}
+              className="flex gap-6"
+            >
+              <div className="flex flex-col lg:flex-row gap-6">
+                <TabsList className="flex flex-col w-48 h-fit bg-muted/30 p-1">
+                  {workExperience.map((job, index) => (
+                    <TabsTrigger
+                      key={index}
+                      value={job.company
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]/g, "-")}
+                      className="w-full text-left justify-start h-auto py-3 px-4 data-[state=active]:bg-background data-[state=active]:text-primary"
+                    >
+                      <div className=" text-left font-medium text-sm">
                         {job.company}
-                      </span>
-                      <div className="flex items-center gap-4">
-                        <span className="flex sm:items-start md:items-center lg:items-center gap-1">
-                          <MapPin className="w-3 h-3 my-1" />
-                          {job.location}
-                        </span>
-                        <span className="flex sm:items-start md:items-center lg:items-center gap-1">
-                          <Calendar className="w-3 h-3 my-1" />
-                          {job.period}
-                        </span>
                       </div>
-                    </div>
-                  </CardHeader>
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
 
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4">
-                      {job.description}
-                    </p>
+                <div className="flex-1/2">
+                  {workExperience.map((job, index) => (
+                    <TabsContent
+                      key={index}
+                      value={job.company
+                        .toLowerCase()
+                        .replace(/[^a-z0-9]/g, "-")}
+                      className="mt-0"
+                    >
+                      <Card className="hover:shadow-lg transition-shadow">
+                        <CardHeader>
+                          <CardTitle className="text-lg">{job.title}</CardTitle>
+                          <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                            <span className="font-medium text-primary">
+                              <a href={job.link} target="_blank">
+                                {job.company}
+                              </a>
+                            </span>
+                            <div className="flex items-center gap-4">
+                              <span className="flex items-center gap-1">
+                                <MapPin className="w-3 h-3" />
+                                {job.location}
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <Calendar className="w-3 h-3" />
+                                {job.period}
+                              </span>
+                            </div>
+                          </div>
+                        </CardHeader>
 
-                    <ul className="list-disc list-inside space-y-1 mb-4 text-sm">
-                      {job.achievements.map((achievement, achIndex) => (
-                        <li key={achIndex}>{achievement}</li>
-                      ))}
-                    </ul>
+                        <CardContent>
+                          <p className="text-muted-foreground mb-4">
+                            {job.description}
+                          </p>
 
-                    <div className="flex flex-wrap gap-2">
-                      {job.technologies.map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                          <ul className="list-disc list-inside space-y-1 mb-4 text-sm">
+                            {job.achievements.map((achievement, achIndex) => (
+                              <li key={achIndex}>{achievement}</li>
+                            ))}
+                          </ul>
+
+                          <div className="flex flex-wrap gap-2">
+                            {job.technologies.map((tech, techIndex) => (
+                              <Badge key={techIndex} variant="secondary">
+                                {tech}
+                              </Badge>
+                            ))}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </TabsContent>
+                  ))}
+                </div>
+              </div>
+            </Tabs>
           </div>
 
           {/* Education */}
