@@ -181,12 +181,12 @@ const Experience = () => {
                               </a>
                             </span>
                             <div className="flex items-center gap-4">
-                              <span className="flex items-center gap-1">
-                                <MapPin className="w-3 h-3" />
+                              <span className="flex lg:items-center items-start gap-1">
+                                <MapPin className="w-3 h-3 my-1" />
                                 {job.location}
                               </span>
-                              <span className="flex items-center gap-1">
-                                <Calendar className="w-3 h-3" />
+                              <span className="flex lg:items-center items-start gap-1">
+                                <Calendar className="w-3 h-3 my-1" />
                                 {job.period}
                               </span>
                             </div>
