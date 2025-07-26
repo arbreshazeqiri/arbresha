@@ -22,7 +22,7 @@ const Experience = () => {
       location: "Prishtina, Kosovo",
       period: "April 2024 - Present",
       description:
-        "Designed and delivered a Web Development program for children, introducing core programming principles.",
+        "Redesigned the organization's website from the ground up based on their visual identity and user needs.",
       achievements: [
         "Did in-depth research and redesigned the website in Figma to match their branding.",
         "Implemented the design using PHP and WordPress for accessibility and ease of use.",
