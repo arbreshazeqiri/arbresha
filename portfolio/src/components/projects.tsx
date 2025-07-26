@@ -9,8 +9,7 @@ const Projects = () => {
       title: "Kosova Makers League Website",
       description:
         "Modern website for Kosova Makers League, aligned with their brand identity and refreshed with a new, vibrant look.",
-      image:
-        "/projects/kml.png",
+      image: "/projects/kml.png",
       technologies: ["Next.js", "React", "WordPress", "PHP"],
       githubUrl: "https://github.com/kosovamakersleague/kml-website",
       liveUrl: "https://kosovamakers.vercel.app/",
@@ -20,8 +19,7 @@ const Projects = () => {
       title: "Healthcare Analiza Website",
       description:
         "Website showcasing the services of a local healthcare clinic, focusing on accessibility and clear user navigation.",
-      image:
-        "/projects/healthcare-analiza.png",
+      image: "/projects/healthcare-analiza.png",
       technologies: ["Next.js", "React", "Tailwind CSS"],
       githubUrl: "https://github.com/arbreshazeqiri/Healthcare-ANALIZA",
       liveUrl: "https://healthcareanaliza.com",
@@ -30,8 +28,7 @@ const Projects = () => {
       title: "Pig Dice Game",
       description:
         "A desktop app built for playing the Pig Dice Game against other players or against the computer.",
-      image:
-        "/projects/pdg.png",
+      image: "/projects/pdg.png",
       technologies: ["Java", "JavaFX", "MYSQL"],
       githubUrl: "https://github.com/arbreshazeqiri/DiceRollSimulator",
     },
@@ -39,8 +36,7 @@ const Projects = () => {
       title: "Minesweeper Solver",
       description:
         "Minesweeper game in three difficulty levels. Solves the board using either the BFS or the DFS algorithm.",
-      image:
-        "/projects/minesweeper-solver.png",
+      image: "/projects/minesweeper-solver.png",
       technologies: ["React", "JavaScript", "BFS", "DFS"],
       githubUrl: "https://github.com/arbreshazeqiri/Minesweeper",
     },

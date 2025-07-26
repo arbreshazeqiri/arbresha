@@ -59,7 +59,13 @@ const Intro = () => {
 
               <div className="space-y-6">
                 <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-                  I&apos;m drawn to early-stage chaos and the challenge of turning <span className="text-primary">vision </span>into something<span className="text-art-purple"> tangible, useful, and beautiful.</span>
+                  I&apos;m drawn to early-stage chaos and the challenge of
+                  turning <span className="text-primary">vision </span>into
+                  something
+                  <span className="text-art-purple">
+                    {" "}
+                    tangible, useful, and beautiful.
+                  </span>
                 </p>
               </div>
 
