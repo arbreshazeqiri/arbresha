@@ -153,7 +153,7 @@ const Experience = () => {
                       value={job.company
                         .toLowerCase()
                         .replace(/[^a-z0-9]/g, "-")}
-                      className="w-full text-left justify-start h-auto py-3 px-4 data-[state=active]:bg-background data-[state=active]:text-primary"
+                      className="w-full text-left justify-start h-auto py-3 px-4 data-[state=active]:bg-background data-[state=active]:text-primary cursor-pointer"
                     >
                       <div className=" text-left font-medium text-sm">
                         {job.company}

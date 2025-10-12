@@ -81,7 +81,7 @@ const Intro = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-border hover:bg-secondary/50 cursor-pointer"
+                  className="border-border hover:bg-secondary/50 cursor-pointer hover:text-white"
                   onClick={() =>
                     (window.location.href =
                       "mailto:arbreshazeqiri0@gmail.com?subject=Contact%20Request&body=Hi%20there,")

@@ -6,6 +6,15 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "Dottedenv - In Progress",
+      description:
+        "Fully customizable digital bullet journal — featuring realistic, fluid animations and persistent data tracking across entries.",
+      image: "/projects/dottedenv.png",
+      technologies: ["Vite", "Python", "FastAPI", "Postgres"],
+      githubUrl: "https://github.com/arbreshazeqiri/dottedenv",
+      featured: true,
+    },
+    {
       title: "Kosova Makers League Website",
       description:
         "Modern website for Kosova Makers League, aligned with their brand identity and refreshed with a new, vibrant look.",
@@ -23,6 +32,14 @@ const Projects = () => {
       technologies: ["Next.js", "React", "Tailwind CSS"],
       githubUrl: "https://github.com/arbreshazeqiri/Healthcare-ANALIZA",
       liveUrl: "https://healthcareanaliza.com",
+    },
+    {
+      title: "Bilbil",
+      description:
+        "Mobile app for learning Albanian, using multiple learning methods and gamification to make it more engaging.",
+      image: "/projects/bilbil.png",
+      technologies: ["React Native", "Expo"],
+      githubUrl: "https://github.com/arbreshazeqiri/bilbil",
     },
     {
       title: "Pig Dice Game",
@@ -50,11 +67,11 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Some of my proudest past projects, while better ones are on the way!
+            Some of my recent projects, while better ones are on the way!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
           {projects.map((project, index) => (
             <Card
               key={index}
