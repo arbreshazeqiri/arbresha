@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -9,7 +12,7 @@ const Projects = () => {
       title: "Dottedenv - In Progress",
       description:
         "Fully customizable digital bullet journal — featuring realistic, fluid animations and persistent data tracking across entries.",
-      image: "/projects/dottedenv.png",
+      image: "/projects/dottedenv.webp",
       technologies: ["Vite", "Python", "FastAPI", "Postgres"],
       githubUrl: "https://github.com/arbreshazeqiri/dottedenv",
       featured: true,
@@ -18,7 +21,7 @@ const Projects = () => {
       title: "Kosova Makers League Website",
       description:
         "Modern website for Kosova Makers League, aligned with their brand identity and refreshed with a new, vibrant look.",
-      image: "/projects/kml.png",
+      image: "/projects/kml.webp",
       technologies: ["Next.js", "React", "WordPress", "PHP"],
       githubUrl: "https://github.com/kosovamakersleague/kml-website",
       liveUrl: "https://kosovamakers.vercel.app/",
@@ -28,7 +31,7 @@ const Projects = () => {
       title: "Healthcare Analiza Website",
       description:
         "Website showcasing the services of a local healthcare clinic, focusing on accessibility and clear user navigation.",
-      image: "/projects/healthcare-analiza.png",
+      image: "/projects/healthcare-analiza.webp",
       technologies: ["Next.js", "React", "Tailwind CSS"],
       githubUrl: "https://github.com/arbreshazeqiri/Healthcare-ANALIZA",
       liveUrl: "https://healthcareanaliza.com",
@@ -37,7 +40,7 @@ const Projects = () => {
       title: "Bilbil",
       description:
         "Mobile app for learning Albanian, using multiple learning methods and gamification to make it more engaging.",
-      image: "/projects/bilbil.png",
+      image: "/projects/bilbil.webp",
       technologies: ["React Native", "Expo"],
       githubUrl: "https://github.com/arbreshazeqiri/bilbil",
     },
@@ -45,7 +48,7 @@ const Projects = () => {
       title: "Pig Dice Game",
       description:
         "A desktop app built for playing the Pig Dice Game against other players or against the computer.",
-      image: "/projects/pdg.png",
+      image: "/projects/pdg.webp",
       technologies: ["Java", "JavaFX", "MYSQL"],
       githubUrl: "https://github.com/arbreshazeqiri/DiceRollSimulator",
     },
@@ -53,7 +56,7 @@ const Projects = () => {
       title: "Minesweeper Solver",
       description:
         "Minesweeper game in three difficulty levels. Solves the board using either the BFS or the DFS algorithm.",
-      image: "/projects/minesweeper-solver.png",
+      image: "/projects/minesweeper-solver.webp",
       technologies: ["React", "JavaScript", "BFS", "DFS"],
       githubUrl: "https://github.com/arbreshazeqiri/Minesweeper",
     },
@@ -74,17 +77,25 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
           {projects.map((project, index) => (
             <Card
-              key={index}
-              className="p-0 overflow-hidden hover:shadow-xl transition-all duration-300 group border-border bg-card hover:bg-secondary/20 hover:border-primary/30"
+              key={project.title}
+              className="p-0 overflow-hidden transition-all duration-300 border-border bg-card hover:bg-secondary/20 hover:border-primary/30 will-change-transform [content-visibility:auto]"
             >
-              <div
-                className="aspect-video bg-muted bg-cover bg-start"
-                style={{ backgroundImage: `url(${project.image})` }}
-              ></div>
+              <div className="relative aspect-video">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                  priority={index < 2}
+                  quality={60}
+                  placeholder="empty"
+                  style={{ objectFit: "cover", objectPosition: "left top" }}
+                />
+              </div>
 
               <div className="p-4">
                 <CardHeader className="p-0 mb-3">
-                  <CardTitle className="text-lg mb-2 group-hover:text-primary transition-colors">
+                  <CardTitle className="text-lg mb-2 hover:text-primary transition-colors">
                     {project.title}
                   </CardTitle>
                   <p className="text-muted-foreground text-sm line-clamp-3">
